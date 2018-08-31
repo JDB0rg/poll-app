@@ -12,10 +12,15 @@ class VotingViewController: UIViewController, VoteControllerProtocol {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
 
+    override func touchesBegan(_: Set<UITouch>, with: UIEvent?){
+        nameTextField.resignFirstResponder()
+        responseTextField.resignFirstResponder()
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
