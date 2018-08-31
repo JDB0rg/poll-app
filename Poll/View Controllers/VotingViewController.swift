@@ -27,6 +27,8 @@ class VotingViewController: UIViewController, VoteControllerProtocol {
         
         voteController?.createVote(with: name, response: response)
     
+        
+        
     }
     
     /*
