@@ -41,7 +41,6 @@ class ResultsTableViewController: UITableViewController, VoteControllerProtocol 
         cell.textLabel?.text = vote?.name
         cell.detailTextLabel?.text = vote?.response
     
-
         return cell
     }
     

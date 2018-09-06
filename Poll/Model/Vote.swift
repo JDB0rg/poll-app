@@ -8,10 +8,12 @@
 
 import Foundation
 
-struct Vote {
+class Vote {
     
     let name: String
     let response: String
+//    let number: Double
+//    let isFun: Bool = false
     
     init(name: String, response: String){
         self.name = name

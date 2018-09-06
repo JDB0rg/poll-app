@@ -20,6 +20,7 @@ class VotingViewController: UIViewController, VoteControllerProtocol {
     override func touchesBegan(_: Set<UITouch>, with: UIEvent?){
         nameTextField.resignFirstResponder()
         responseTextField.resignFirstResponder()
+       // view.endEditing(true)
     }
     
     override func didReceiveMemoryWarning() {

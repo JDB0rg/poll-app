@@ -101,7 +101,6 @@
 				C312A0002138C756008458B3 /* CombinedViewController.swift */,
 				C3129FFC2138C3CE008458B3 /* ResultsTableViewController.swift */,
 				C3129FF82138C0E1008458B3 /* VotingViewController.swift */,
-				C3129FF42138AF40008458B3 /* VoteController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -110,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				C3129FF22138AE66008458B3 /* Vote.swift */,
+				C3129FF42138AF40008458B3 /* VoteController.swift */,
 				C312A0062138D35F008458B3 /* VoteControllerProtocol.swift */,
 			);
 			path = Model;

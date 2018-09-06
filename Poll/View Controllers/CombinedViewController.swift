@@ -18,7 +18,6 @@ class CombinedViewController: UIViewController, VoteControllerProtocol {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     
@@ -27,18 +26,19 @@ class CombinedViewController: UIViewController, VoteControllerProtocol {
         // Pass the selected object to the new view controller.
         
         if segue.identifier == "Results" {
-            guard let resultsTVC = segue.destination as? ResultsTableViewController else {return}
+            guard let resultsTVC = segue.destination as? VoteControllerProtocol else {return}
             
             resultsTVC.voteController = voteController
-            resultsTableViewController = resultsTVC
+            // resultsTableViewController = resultsTVC
             
             
             
         } else if segue.identifier == "Voting"{
             
-            guard let votingVC = segue.destination as? VotingViewController else {return}
+            guard let votingVC = segue.destination as? VoteControllerProtocol else {return}
             
-            votingViewController = votingVC
+            votingVC.voteController = voteController
+            // votingViewController = votingVC
         }
     }
     

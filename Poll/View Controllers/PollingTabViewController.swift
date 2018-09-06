@@ -29,9 +29,7 @@ class PollingTabViewController: UITabBarController {
             if let childVC = childVC as? VoteControllerProtocol {
                 childVC.voteController = voteController
             }
-            
         }
-        
     }
     
     
