@@ -16,6 +16,7 @@ class VotingViewController: UIViewController, VoteControllerProtocol {
         // Do any additional setup after loading the view.
     }
 
+    // Remove Keyboard when not being touched
     override func touchesBegan(_: Set<UITouch>, with: UIEvent?){
         nameTextField.resignFirstResponder()
         responseTextField.resignFirstResponder()
